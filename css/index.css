@@ -20,13 +20,16 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+#rightImage {
+    position: relative;
+}
 
 /* Hero Typography */
 
 #archiHeader {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 1rem;
     text-transform: uppercase;
     color: #AF9574;
@@ -43,14 +46,15 @@ body {
   justify-content: center; 
   position: absolute;
   top: -25px;
+  left: -10px;
 }
 #uxerHeader {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 1rem;
     text-transform: uppercase;
-    color: #AF9574;
+    color:#AF9574;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -67,9 +71,12 @@ body {
   left: 200px;
 }
 #heroSubheaderOne {
-    color: #AF9574;
-    font-size: .65rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: lighter;
     text-transform: uppercase;
+    color: #AF9574;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -82,13 +89,16 @@ body {
   -webkit-justify-content: center; 
   justify-content: center; 
   position: absolute;
-  top: 165px;
-  left: 225px;
+  top: 140.5px;
+  left: 190px;
+
 }
 #heroSubheaderTwo {
-    color: #AF9574;
-    font-size: .65rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: .75rem;
+    line-height: 1rem;
     text-transform: uppercase;
+    color: #AF9574;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -101,12 +111,29 @@ body {
   -webkit-justify-content: center; 
   justify-content: center; 
   position: absolute;
-  top: 200px;
-  left: 125px;
-
+  top: 175.5px;
+  left: 175px;
 }
-
-
+#btn-inspiration {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: .85rem;
+    text-transform: uppercase;
+    color: #AF9574;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center; 
+  justify-content: center; 
+  position: absolute;
+  top: -5px;
+}
 /* Visual Storyteller */
 .visualContainer {
     
@@ -213,21 +240,34 @@ h1 {
 /* Media Queries */
 
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1200px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
+@media only screen and (min-device-width: 800px) {
     #heroSubheaderOne {
-        left: 175px;
+        font-size: .65rem;
+    }
+    #heroSubheaderTwo {
+        font-size: .65rem;
+    }
+    #uxerHeader {
+        left: 150px;
     }
     #archiHeader {
-        left: 90px;
     }
-    #thoughtsContent {
-        margin-top: 30px;
-        margin-left: 20px;
-        }
+}
+@media only screen and (min-device-width:768px) {
+    #uxerHeader {
+        left: 170px;
+        font-size: 2.95rem;
+    }
+    #archiHeader {
+        left: 20px;
+        font-size: 2.95rem;
+    }
+    #heroSubheaderOne {
+        font-size: .65rem;
+    }
+    #heroSubheaderTwo {
+        font-size: .65rem;
+    }
     /* Visual Story */
     .visualStory {
         margin-top: 4.5%;
@@ -239,18 +279,29 @@ h1 {
     #evolution {
         padding-bottom: 25px;
     }
-    #explorer {
-        padding-bottom: 25px;
-    }
     #creativity {
         padding-bottom: 25px;
     }
 }
-
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width:1000px) {
     #heroSubheaderOne {
-        left: 90px;
+        left: 190px;
     }
+    #heroSubheaderTwo {
+        top: 165px;
+        left: 145px;
+    }
+}
+@media only screen and (max-width:1350px) {
+    #heroSubheaderOne {
+        top: 140.5px;
+    }
+    #heroSubheaderTwo {
+        top: 165px;
+        left: 175px;
+    }
+}
+@media only screen and (max-width: 1650px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -273,17 +324,25 @@ h1 {
 /* ----------- Google Pixel ----------- */
 
 /* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-    #heroSubheaderOne {
-        left: 15px;
-    }
+@media screen and (max-width: 480px) {
     #archiHeader {
         left: 70px;
     }
+    #heroSubheaderOne {
+        left: 180px;
+    }
+    #heroSubheaderTwo {
+        top: 200px;
+        left: 170px;
+    }
 }
+@media screen and (max-width:360px) {
+    #heroSubheaderOne {
+        top: 155px;
+        left: 155px;
+    }
+}
+
 
 
 
