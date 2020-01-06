@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -42,13 +44,13 @@
         <div class="container-fluid visualContainer">
             <div class="row visualRow">
                 <div class="col-md-3 col-sm-12 visualBorder">
-                    <img class="img-responsive" id="visualBlock" src="../archi/images/visualBlock.svg"
+                    <img class="img-responsive visualImage" id="visualBlock" src="../archi/images/visualBlock.svg"
                         alt="visualBorder">
                 </div>
-                <div class="col-md-6 col-sm-12 visualStory">
-                    <h1 id="visual">A Visual</h1>
-                    <h1 id="storyteller">Storyteller's</h1>
-                    <h1 id="mission">Mission</h1>
+                <div class="col-md-6 col-sm-12">
+                    <h1 class="visualHeader">A Visual</h1>
+                    <h1 class="visualHeader">Storyteller's</h1>
+                    <h1 class="visualHeader">Mission</h1>
                 </div>
                 <div class="col-md-3 col-sm-12 visualValues">
                     <ul class="visualList" style="list-style-type:none;">
@@ -65,26 +67,27 @@
 
         <div class="container-fluid thoughtsContainer">
             <div class="row thoughtsRow">
-                <div class="col-md-4 col-sm-2 thoughtsHeader">
+                <div class="col-md-4 col-sm-2">
                     <div id="headerTwo">Khadijah's thoughts...</div>
                 </div>
-                <div class="col-md-8 col-md-10 thoughts">
-                    <p class="lead thoughtsContent">
+                <div class="col-md-8 col-md-10">
+                    <div class="quotationMark">"</div>
+                    <p id="thoughtsContent">
                         There is never one solution to a problem. As a designer, I choose to view everything
                         as a case that can be solved in various ways. The path of user experience design drives our
                         minds to continuously search for the best solution. I design to build brands that reflect
                         your mission. Bring your problems, projects to me and I will add the light that you have
                         been searching for.
                     </p>
-                    <a id="btnThoughts" class="btn" href="#">Connect with me</a>
-                </div>
+                    <a class="btn btnThoughts" href="#">Connect with me</a>
+                </p>
             </div>
         </div>
 
         <!-- Medium Case Studies -->
 
-        <div class="mediumHeader">
-            <h id="borderMedium" class="mediumCard">Recent Case Studies on Medium:</h>
+        <div class="container-fluid mediumCard">
+            <div  id="borderMedium">Recent Case Studies on Medium:</div >
         </div>
         <div class="container-fluid caseContainer">
             <div class="row caseRow">

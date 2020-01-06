@@ -3,6 +3,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 /*Hero Block */
 .hero {
@@ -136,21 +140,24 @@ body {
 }
 /* Visual Storyteller */
 .visualContainer {
-    
-}
+    margin-top: 0;
+    padding-top: 0;
 
-.visualBlock {
-    position: relative;
-    padding-left: 0;
-    margin-bottom: 0;
+}
+#visualBlock {
+    padding:0;
+    margin: 0;
+    display: block;
 }
 .visualList {
     font-family: 'Old Standard TT', sans-serif;
     text-transform: uppercase;
     color: #707070;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 #passion {
-    padding-top: 95px;
+    padding-top: 25%;
     padding-bottom: 50px;
 }
 #evolution {
@@ -162,56 +169,74 @@ body {
 #creativity {
     padding-bottom: 50px;
 }
-.visualStory {
-    margin-top: 8.5%;
-    margin-bottom: 0;
+#teamwork {
     padding-bottom: 0;
+    margin-bottom: 0;
 }
-h1 {
+.visualHeader {
     color: #AF9574;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     text-align: right;
-    padding-right: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 25%;
+    right: 15%;
 }
-
-
 /* Thoughts Row */
 .thoughtsRow {
-    height: 425px;
+    padding-top: 0;
+    margin-top: 0;
     background-color:#D9D5D5;
 }
-
 #headerTwo {
     text-transform: uppercase;
+    font-weight: bold;
     font-family: 'Raleway', sans-serif;
     color: #AF9574;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     transform: rotate(-90deg);
     border-bottom: 1px solid;
     border-color: black;
     position: absolute;
-    bottom: -25.5vh;
-    left: 0;
+    padding-left: 0;
     margin-left: 0;
+    bottom: -230px;
+    left: -40px;
     }
+.quotationMark {
+    margin: 0;
+    padding:0;
+    position: absolute;
+    top: -120px;
+    left: 150px;
+    transform: rotate(-180deg);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 200px;
+    color: #7E7E7E;
+}
 #thoughtsContent { 
-  justify-content: center; 
+    margin-top: 120px;
+    margin-bottom: 120px;
+    position: relative;
+    top: 25px;
+    padding-left: 15%;
     color: #4B4B4B;
     line-height: 2rem;
     font-size: 18px;
-    position: absolute;
-    margin-top: 100px;
-    padding-left: 175px;
     }
-#btnThoughts {
-    text-align: justify;
-    position: relative;
+.btnThoughts {
     text-transform: uppercase;
+    position: relative;
     }
 /* Medium Case Cards */
+.mediumCard {
+    padding-left: 0;
+    margin-left: 0;
+}
 #borderMedium {
     font-size: 1rem;
     font-weight: bold;
@@ -225,88 +250,30 @@ h1 {
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 5px;
+    margin-left: 0;
 }
+/* Case Card */
 .caseContainer {
     margin-top: 120px;
     margin-bottom: 120px;
     padding: 55px;
-    background-color: #E2E1E1;
+    background-color:#D9D5D5;
 }
 .card-body {
     height:200px;
     margin-bottom: 20px;
 }
-    
+.btn-primary {
+    background-color: #BFAA8F;
+    color: black;
+    border: none;
+}
 /* Media Queries */
-
-
-@media only screen and (min-device-width: 800px) {
-    #heroSubheaderOne {
-        font-size: .65rem;
-    }
-    #heroSubheaderTwo {
-        font-size: .65rem;
-    }
-    #uxerHeader {
-        left: 150px;
-    }
-    #archiHeader {
-    }
-}
-@media only screen and (min-device-width:768px) {
-    #uxerHeader {
-        left: 170px;
-        font-size: 2.95rem;
-    }
-    #archiHeader {
-        left: 20px;
-        font-size: 2.95rem;
-    }
-    #heroSubheaderOne {
-        font-size: .65rem;
-    }
-    #heroSubheaderTwo {
-        font-size: .65rem;
-    }
-    /* Visual Story */
-    .visualStory {
-        margin-top: 4.5%;
-    }
-    #passion {
-        padding-top: 50px;
-        padding-bottom: 25px;
-    }
-    #evolution {
-        padding-bottom: 25px;
-    }
-    #creativity {
-        padding-bottom: 25px;
-    }
-}
-@media only screen and (max-width:1000px) {
-    #heroSubheaderOne {
-        left: 190px;
-    }
-    #heroSubheaderTwo {
-        top: 165px;
-        left: 145px;
-    }
-}
-@media only screen and (max-width:1350px) {
-    #heroSubheaderOne {
-        top: 140.5px;
-    }
-    #heroSubheaderTwo {
-        top: 165px;
-        left: 175px;
-    }
-}
 @media only screen and (max-width: 1650px) {
     h1 {
         font-size: 2.5rem;
     }
     #passion {
-        padding-top: 25px;
         padding-bottom: 40px;
     }
     #evolution {
@@ -318,31 +285,218 @@ h1 {
     #creativity {
         padding-bottom: 40px;
     }
-
+    #teamwork {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 }
-
-/* ----------- Google Pixel ----------- */
-
-/* Portrait and Landscape */
-@media screen and (max-width: 480px) {
+@media only screen and (max-width:1350px) {
     #archiHeader {
-        left: 70px;
+        top: -50px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    #uxerHeader {
+        font-size: 3rem;
+        left: 190px;
+        padding-bottom: 0;
+        margin:0;
+        top: 55px;
     }
     #heroSubheaderOne {
+        top: 130.5px;
         left: 180px;
     }
     #heroSubheaderTwo {
-        top: 200px;
-        left: 170px;
+        top: 165px;
+        left: 175px;
+    }
+    .visualHeader {
+        font-size: 3.5rem;
     }
 }
-@media screen and (max-width:360px) {
+/* ipad */
+@media only screen and (max-width:1060px){
+    #archiHeader {
+        font-size: 3rem;
+        left: 15px;
+    }
+    #uxerHeader {
+        font-size: 3rem;
+        left: 200px;
+    }
     #heroSubheaderOne {
-        top: 155px;
-        left: 155px;
+        left: 160px;
+        top: 140px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    #heroSubheaderTwo {
+        top: 170px;
+        left: 150px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .visualHeader {
+        font-size: 3.5rem;
+        top: 20%;
+        left: -5%;
+    }
+    #passion {
+        padding-top:30px;
+        padding-bottom: 30px;
+    }
+    #evolution {
+        padding-bottom: 30px;
+    }
+    #explorer {
+        padding-bottom: 30px;
+    }
+    #creativity {
+        padding-bottom: 30px;
     }
 }
+@media only screen and (max-width:923px){
+    #archiHeader {
+        top: -45px;
+        left: 20px;
+        font-size: 2.95rem;
+    }
+    #uxerHeader {
+        font-size: 2.95rem;
+        padding: 0;
+        top: 70px;
+        left: 175px;
+    }
+    #heroSubheaderOne {
+        font-size: .65rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        left: 140px;
+        top: 135px;
+    }
+    #heroSubheaderTwo {
+        font-size: .65rem;
+        top: 170px;
+        left: 125px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .visualHeader {
+        font-size: 3rem;
+        top: 15%;
+    }
+    .visualList {
+        font-size: .85rem;
+    }
+    #passion {
+        padding-bottom: 25px;
+    }
+    #evolution {
+        padding-bottom: 25px;
+    }
+    #explorer {
+        padding-bottom: 25px;
+    }
+    #creativity {
+        padding-bottom: 25px;
+    }
 
+@media only screen and (max-width:768px) {
+    #archiHeader {
+        font-size: 2.95rem;
+        top: -45px;
+    }
+    #uxerHeader {
+        font-size: 2.95rem;
+        left: 150px;
+        padding-bottom: 0;
+    }
+    #heroSubheaderOne {
+        font-size: .65rem;
+        top: 125px;
+        left: 130.5px;
+    }
+    #heroSubheaderTwo {
+        font-size: .65rem;
+        top: 155px;
+        left: 120px;
+        line-height: .85rem;
+        padding-top: 0;
+    }
+    .visualList {
+        font-size: .85rem;
+    }
+    #passion {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    #evolution {
+        padding-bottom: 20px;
+    }
+    #explorer {
+        padding-bottom: 20px;
+    }
+    #creativity {
+        padding-bottom: 20px;
+    }
+    #teamwork {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .thoughtsContent {
+        padding-left: 5%;
+        top: 5px;
+    }
+    .quotationMark {
+        font-size: 170px;
+    }
+}
+/* ----------- Google Pixel ----------- */
+/* Portrait and Landscape */
+@media screen and (max-width: 480px) {
+    #archiHeader {
+        left: -20px;
+        font-size: 3rem;
+    }
+    #uxerHeader {
+        font-size: 3rem;
+        left: 160px;
+    }
+    #heroSubheaderOne {
+        left: 150px;
+    }
+    #heroSubheaderTwo {
+        top: 170px;
+        left: 140px;
+    }
+}
+@media screen and (max-width:320px) {
+    #archiHeader {
+        font-size: 2.95rem;
+    }
+    #uxerHeader {
+        font-size: 2.95rem;
+        left: 150px;
+        padding-bottom: 0;
+    }
+    #heroSubheaderOne {
+        top: 130px;
+        left: 131.5px;
+        padding-top: 0;
+    }
+    #heroSubheaderTwo {
+        top:175px;
+        left: 120px;
+        padding-top: 0;
+    }
+}
 
 
 
