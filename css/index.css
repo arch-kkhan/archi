@@ -189,11 +189,12 @@ body {
 .thoughtsRow {
     padding-top: 0;
     margin-top: 0;
+    height: 450px;
     background-color:#D9D5D5;
 }
 #headerTwo {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900px;
     font-family: 'Raleway', sans-serif;
     color: #AF9574;
     font-size: 1.25rem;
@@ -204,33 +205,36 @@ body {
     position: absolute;
     padding-left: 0;
     margin-left: 0;
-    bottom: -230px;
-    left: -40px;
+    bottom: -130px;
+    left: 5px;
     }
 .quotationMark {
     margin: 0;
     padding:0;
     position: absolute;
-    top: -120px;
-    left: 150px;
-    transform: rotate(-180deg);
-    font-family: 'Catamaran', sans-serif;
-    font-size: 200px;
+    top:-90px;
+    left: 200px;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 150px;
     color: #7E7E7E;
 }
 #thoughtsContent { 
-    margin-top: 120px;
-    margin-bottom: 120px;
     position: relative;
-    top: 25px;
+    top: 20px;
     padding-left: 15%;
     color: #4B4B4B;
-    line-height: 2rem;
-    font-size: 18px;
+    line-height: 2.5rem;
+    font-size: 20px;
     }
-.btnThoughts {
+#btnThoughts {
+    color: #4B4B4B;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
     text-transform: uppercase;
     position: relative;
+    top: 60px;
+    left: 90.5%;
     }
 /* Medium Case Cards */
 .mediumCard {
@@ -289,6 +293,12 @@ body {
         padding-bottom: 0;
         margin-bottom: 0;
     }
+    #btnThoughts {
+        left: 80.5%;
+        }
+    #thoughtsContent {
+        left:20px;
+    }
 }
 @media only screen and (max-width:1350px) {
     #archiHeader {
@@ -313,6 +323,16 @@ body {
     }
     .visualHeader {
         font-size: 3.5rem;
+    }
+    #passion {
+        padding-top: 25px;
+    }
+    #headerTwo {
+        bottom: -165px;
+    }
+    #thoughtsContent {
+        left: 45px;
+        padding-right: 0;
     }
 }
 /* ipad */
@@ -356,6 +376,12 @@ body {
     }
     #creativity {
         padding-bottom: 30px;
+    }
+    .quotationMark {
+        left: 200px;
+    }
+    #thoughtsContent {
+        left: 65px;
     }
 }
 @media only screen and (max-width:923px){
@@ -407,8 +433,19 @@ body {
     #creativity {
         padding-bottom: 25px;
     }
+    #thoughtsContent {
+        font-size: 18px;
+    }
+    #btnThoughts {
+        top: 30px;
+    }
+    .quotationMark {
+        font-size: 130px;
+        left: 170px;
+    }
+}
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:800px) {
     #archiHeader {
         font-size: 2.95rem;
         top: -45px;
@@ -450,12 +487,96 @@ body {
         padding-bottom: 0;
         margin-bottom: 0;
     }
-    .thoughtsContent {
-        padding-left: 5%;
-        top: 5px;
+}
+/* Portrait and Landscape */
+@media screen and (max-width: 768px) {
+    #archiHeader {
+        left: -20px;
+        font-size: 3rem;
+    }
+    #uxerHeader {
+        font-size: 3rem;
+        left: 150px;
+    }
+    #heroSubheaderOne {
+        left: 132px;
+    }
+    #heroSubheaderTwo {
+        top: 165px;
+        left: 115px;
+    }
+    .visualHeader {
+        font-size: 2.7rem;
+    }
+    .visualList {
+        text-align: right;
+        padding-right: 20px;
+        padding-top: 10pxpx;
+        padding-bottom: 10px
+    }
+    #headerTwo {
+        padding-left: 0;
+        padding-right: 0;
+        bottom: -180px;
+        left: -55px;
     }
     .quotationMark {
-        font-size: 170px;
+        padding-left: 0;
+        padding-bottom: 0;
+        left: 130px;
+    }
+    #thoughtsContent { 
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 0;
+        padding-left: 0;
+        top: 20px;
+        padding-right: 0;
+        margin-right: 0;
+        left: 100px;
+    }
+
+}
+@media screen and (max-width:720px) {
+    #visualBlock {
+        display: none;
+    }
+    .visualHeader {
+        font-size: 2rem;
+    }
+    #passion {
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+    .thoughtsColumn {
+        margin: 0;
+        padding: 0;
+    }
+    #headerTwo {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        bottom: -230px;
+        left: -35px;
+    }
+    .quotationMark {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        left: 100px;
+    }
+    #thoughtsContent { 
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 0;
+        padding-left: 0;
+        top: 20px;
+        left: 100px;
+    }
+    #btnThoughts {
+        left: 70%;
     }
 }
 /* ----------- Google Pixel ----------- */
@@ -473,8 +594,49 @@ body {
         left: 150px;
     }
     #heroSubheaderTwo {
-        top: 170px;
+        top: 155px;
         left: 140px;
+    }
+    #headerTwo {
+        bottom: -300px;
+        left: -90px;
+    }
+    .quotationMark {
+        font-size: 150px;
+        position: absolute;
+        left: 70px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .visualHeader {
+        font-size: 2rem;
+    }
+    #visualBlock {
+        display: none;
+    }
+    .visualList {
+        text-align: right;
+        padding-right: 20px;
+    }
+    .thoughtsRow {
+        height: 550px;
+    }
+    #thoughtsContent {
+        font-size: 16px;
+        line-height: 2rem;
+        top: 35px;
+        left: 55px;
+    }
+    .quotationMark {
+        top: -55px;
+        left: 55px;
+        font-size: 120px;
+    }
+    #headerTwo {
+        bottom: -250px;
+    }
+    #btnThoughts {
+        left: 15.5%;
     }
 }
 @media screen and (max-width:320px) {
@@ -496,6 +658,24 @@ body {
         left: 120px;
         padding-top: 0;
     }
+    #visualBlock {
+        display: none;
+    }
+    .visualHeader {
+        font-size: 2rem;
+    }
+    .visualList {
+        padding-top: 0;
+        text-align: right;
+    }
+    .thoughtsRow {
+        height: 650px;
+
+    }
+    #headerTwo {
+        bottom: -310px;
+    }
+
 }
 
 
