@@ -624,9 +624,11 @@ h3:hover {
     }
     #thoughtsContent {
         font-size: 18px;
+
     }
     #btnThoughts {
         top: 30px;
+        left: 500px;
     }
     .quotationMark {
         font-size: 130px;
@@ -766,6 +768,7 @@ h3:hover {
         padding-left: 0;
         padding-bottom: 0;
         left: 40px;
+        font-size: 150px;
     }
     #thoughtsContent { 
         padding-top: 0;
@@ -779,7 +782,7 @@ h3:hover {
         text-align: justify;
     }
     #btnThoughts {
-        left: 65%;
+        left: 55%;
     }
     .caseRow {
         height: 1000px;
@@ -796,7 +799,7 @@ h3:hover {
 }
 /* ----------- Google Pixel ----------- */
 /* Portrait and Landscape */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     .navName {
         display: none;
     }
