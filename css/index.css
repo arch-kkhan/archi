@@ -8,6 +8,33 @@ body {
     padding-left: 0;
     padding-right: 0;
 }
+/* Navigation Bar */
+.navbar {
+    text-transform: uppercase;
+    color: #4B4B4B;
+}
+.navbar-brand {
+    color: #4B4B4B;
+    font-size: 1rem;
+}
+.nav {
+    color: #4B4B4B;
+    margin-top: 5%;
+    width: 35%;
+    padding-left:0;
+    padding-right: 0;
+    margin-right: 20px;
+}
+ .navName {
+     color: #4B4B4B;
+     border-bottom: 1px solid #AF9574;
+ }
+ .navName:hover {
+     border-bottom: 1px solid black ;
+     text-decoration: none;
+     color: #4B4B4B;
+ }
+
 /*Hero Block */
 .hero {
     margin-top: 5%;
@@ -147,6 +174,7 @@ body {
 #visualBlock {
     padding:0;
     margin: 0;
+    position: relative;
     display: block;
 }
 .visualList {
@@ -227,19 +255,17 @@ body {
     font-size: 20px;
     }
 #btnThoughts {
-    color: #4B4B4B;
-    margin-left: 0;
-    margin-right: 0;
-    padding-right: 0;
-    text-transform: uppercase;
     position: relative;
     top: 60px;
     left: 90.5%;
     }
+    #btnThoughts:hover {
+        color: white;
+    }
 /* Medium Case Cards */
 .mediumCard {
-    padding-left: 0;
-    margin-left: 0;
+    margin: 0;
+    padding:0;
 }
 #borderMedium {
     font-size: 1rem;
@@ -257,22 +283,132 @@ body {
     margin-left: 0;
 }
 /* Case Card */
+.caseRow {
+    height: 850px;
+    margin-bottom:0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
 .caseContainer {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 55px;
+    margin-left: 0;
+    margin-right: 0;
     padding: 55px;
-    background-color:#D9D5D5;
+}
+.card {
+    top:50px;
+    height: 650px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 85px solid #BFAA8F;
+    margin-bottom: 150px;
+}
+.card:hover {
+    background-color: #D9D5D5;
 }
 .card-body {
-    height:200px;
-    margin-bottom: 20px;
+    height:600px;
+}
+h3 {
+    font-family: 'old standard tt', sans-serif;
+    font-weight: bolder;
+    color: black;
+    position: absolute;
+    padding-top: 0;
+    padding-bottom:0;
+    padding-left: 5px;
+    top: 315px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+h3:hover {
+    color: white;
+}
+.card-text {
+    color: #4B4B4B;
+    position: absolute;
+    top: 350px;
+    line-height: 1.5rem;
+    text-align: left;
+    padding-top: 0;
+    margin-top: 0;
+    padding-right: 15px;
+    padding-left: 5px;
 }
 .btn-primary {
-    background-color: #BFAA8F;
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
     color: black;
     border: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding-left: 5px;
 }
+.btn-primary:hover {
+    background-color: transparent;
+}
+#btnCase {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 590px;
+}
+.bodyOne {
+    background-image: url("../images/fhCard.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+.bodyTwo {
+    background-image: url("../images/aiCard.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.bodyThree {
+    background-image: url("../images/fur.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+/* Dribbble */
+#borderDribbble {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'raleway',sans-serif;
+    text-transform: uppercase;
+    background-color: black;
+    position:absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+
+
 /* Media Queries */
+@media only screen and (max-width:2000) {
+   .bodyOne {
+       width: 80%;
+   }
+}
+
 @media only screen and (max-width: 1650px) {
     h1 {
         font-size: 2.5rem;
@@ -298,6 +434,12 @@ body {
         }
     #thoughtsContent {
         left:20px;
+    }
+    h3 {
+        top: 300px;
+    }
+    .card-text {  
+        top: 350px;
     }
 }
 @media only screen and (max-width:1350px) {
@@ -334,9 +476,19 @@ body {
         left: 45px;
         padding-right: 0;
     }
+    h3 {
+        top: 250px;
+    }
+    .card-text {
+        top: 300px;
+    }
 }
 /* ipad */
 @media only screen and (max-width:1060px){
+    .nav {
+        margin-top: 10%;
+        width: 45%;
+    }
     #archiHeader {
         font-size: 3rem;
         left: 15px;
@@ -383,8 +535,45 @@ body {
     #thoughtsContent {
         left: 65px;
     }
+    h3 {
+        top: 200px;
+    }
+    .card-text {
+        top: 250px;
+    }
 }
-@media only screen and (max-width:923px){
+@media only screen and (max-width: 990px) {
+    #btn-inspiration {
+        font-size: .85rem;
+    }
+    .bodyOne {
+        width: 75%;
+        left: 25px;
+    }
+    .bodyTwo {
+        width: 75%;
+    }
+    .bodyThree {
+        width: 75%;
+    }
+    h3 {
+        top: 350px;
+    }
+    .card-text {
+        top: 400px;
+    }
+}
+
+@media only screen and (max-width:923px){ 
+    .nav {
+        margin-top: 0;
+    }
+    .navName {
+        display: none;
+    }
+    #findMe {
+        display: none;
+    }
     #archiHeader {
         top: -45px;
         left: 20px;
@@ -442,6 +631,22 @@ body {
     .quotationMark {
         font-size: 130px;
         left: 170px;
+    }
+    .bodyOne {
+        width: 75%;
+        left: 25px;
+    }
+    .bodyTwo {
+        width: 75%;
+    }
+    .bodyThree {
+        width: 75%;
+    }
+    h3 {
+        top: 350px;
+    }
+    .card-text {
+        top: 400px;
     }
 }
 
@@ -511,7 +716,7 @@ body {
     .visualList {
         text-align: right;
         padding-right: 20px;
-        padding-top: 10pxpx;
+        padding-top: 10px;
         padding-bottom: 10px
     }
     #headerTwo {
@@ -535,9 +740,8 @@ body {
         margin-right: 0;
         left: 100px;
     }
-
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:760px) {
     #visualBlock {
         display: none;
     }
@@ -553,35 +757,52 @@ body {
         padding: 0;
     }
     #headerTwo {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        bottom: -230px;
-        left: -35px;
+        display: none;
+
     }
     .quotationMark {
         margin-left: 0;
         margin-right: 0;
         padding-left: 0;
         padding-bottom: 0;
-        left: 100px;
+        left: 40px;
     }
     #thoughtsContent { 
         padding-top: 0;
         padding-bottom: 0;
         margin-left: 0;
+        margin-right: 0;
         padding-left: 0;
         top: 20px;
-        left: 100px;
+        left: 40px;
+        padding-right: 75px;
+        text-align: justify;
     }
     #btnThoughts {
-        left: 70%;
+        left: 65%;
+    }
+    .caseRow {
+        height: 1000px;
+    }
+    .bodyOne {
+        padding-top: 10px;
+    }
+    h3 {
+        top: 300px;
+    }
+    .card-text {
+        top: 350px;
     }
 }
 /* ----------- Google Pixel ----------- */
 /* Portrait and Landscape */
 @media screen and (max-width: 480px) {
+    .navName {
+        display: none;
+    }
+    #findMe {
+        display: none;
+    }
     #archiHeader {
         left: -20px;
         font-size: 3rem;
@@ -638,8 +859,42 @@ body {
     #btnThoughts {
         left: 15.5%;
     }
+    h3 {
+        margin-top: 0;
+        top: 200px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .card-text {
+        top: 250px;
+    }
+    .caseContainer {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .card {
+        height: 800px;
+        border: #707070  1px solid;
+        border-bottom: #AF9574 solid 75px;
+        width: 300px;
+    }
+    #btnCase {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top: 745px;
+    }
+
 }
 @media screen and (max-width:320px) {
+    .navName {
+        display: none;
+    }
+    #findMe {
+        display: none;
+    }
     #archiHeader {
         font-size: 2.95rem;
     }
@@ -675,7 +930,30 @@ body {
     #headerTwo {
         bottom: -310px;
     }
-
+    .caseContainer {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .card {
+        height: 800px;
+        border: #707070  1px solid;
+        border-bottom: #AF9574 solid 75px;
+        width: 250px;
+    }
+    h3 {
+        margin-top: 0;
+        top: 170px;
+        font-size: .85rem;
+    }
+    .card-text {
+        top: 200px;
+        font-size: .85rem;
+    }
+    #btnCase {
+        font-size: .85rem;
+    }
 }
 
 
