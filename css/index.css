@@ -262,6 +262,8 @@ body {
     #btnThoughts:hover {
         color: white;
     }
+
+    
 /* Medium Case Cards */
 .mediumCard {
     margin: 0;
@@ -398,6 +400,10 @@ h3:hover {
     margin-bottom: 5px;
     margin-top: 0;
     margin-left: 0;
+}
+/* Footer*/
+.footer {
+    text-align: center;
 }
 
 
