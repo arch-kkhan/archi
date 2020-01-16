@@ -291,21 +291,27 @@ body {
     padding-bottom: 0;
     padding-left: 0;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 0;    
 }
 .caseContainer {
     margin-top: 55px;
     margin-left: 0;
     margin-right: 0;
-    padding: 55px;
+    padding-top: 55px;
+    padding-bottom: 5px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 200px;
+    background-color: #D9D5D5;
 }
 .card {
     top:50px;
     height: 650px;
-    border-radius: 0;
+    border-radius: 0px;
     border: none;
     border-bottom: 85px solid #BFAA8F;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
+    
 }
 .card:hover {
     background-color: #D9D5D5;
@@ -329,7 +335,7 @@ h3:hover {
     color: white;
 }
 .card-text {
-    color: #4B4B4B;
+    color:#7E7E7E;
     position: absolute;
     top: 350px;
     line-height: 1.5rem;
@@ -564,7 +570,11 @@ h3:hover {
     .card-text {
         top: 400px;
     }
+    .caseContainer {
+        height: 2300px;
+    }
 }
+
 
 @media only screen and (max-width:923px){ 
     .nav {
@@ -878,10 +888,11 @@ h3:hover {
         margin-left: 0;
         padding-left: 5px;
         padding-right: 5px;
+        height: 2700px;
+        background-color: cover;
     }
     .card {
         height: 800px;
-        border: #707070  1px solid;
         border-bottom: #AF9574 solid 75px;
         width: 300px;
     }
@@ -943,7 +954,6 @@ h3:hover {
     }
     .card {
         height: 800px;
-        border: #707070  1px solid;
         border-bottom: #AF9574 solid 75px;
         width: 250px;
     }
