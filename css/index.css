@@ -263,7 +263,7 @@ body {
     #btnThoughts:hover {
         color: white;
     }
-    .fas {
+    .chevronCase {
         color: black;
     }
 
@@ -368,6 +368,16 @@ h3:hover {
     padding: 0;
     margin: 0;
     top: 590px;
+}
+.chevronCase {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 590px;
+    left: 175px;
+}
+.chevronCase:hover {
+    color: white;
 }
 .bodyOne {
     background-image: url("../images/fhCard.png");
