@@ -257,12 +257,16 @@ body {
     }
 #btnThoughts {
     position: relative;
-    top: 60px;
-    left: 90.5%;
+    top: 55px;
+    left: 80.5%;
     }
     #btnThoughts:hover {
         color: white;
     }
+    .fas {
+        color: black;
+    }
+
 
     
 /* Medium Case Cards */
@@ -390,10 +394,6 @@ h3:hover {
     background-size: contain;
     padding-bottom: 0;
     margin-bottom: 0;
-}
-.fas {
-    size: 200px;
-    color: #BFAA8F;
 }
 /* Dribbble */
 #borderDribbble {
@@ -577,6 +577,10 @@ h3:hover {
     }
     .caseContainer {
         height: 2300px;
+    }
+    #btnThoughts {
+        top: 30px;
+        left: 500px;
     }
 }
 
@@ -860,7 +864,7 @@ h3:hover {
         padding-right: 20px;
     }
     .thoughtsRow {
-        height: 550px;
+        height: 800px;
     }
     #thoughtsContent {
         font-size: 16px;
@@ -907,7 +911,6 @@ h3:hover {
         margin: 0;
         top: 745px;
     }
-
 }
 @media screen and (max-width:320px) {
     .navName {
