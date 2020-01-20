@@ -263,8 +263,11 @@ body {
     #btnThoughts:hover {
         color: white;
     }
-    .chevronCase {
+    .chevronThoughts {
         color: black;
+    }
+    .chevronThoughts:hover {
+        color: white;
     }
 
 
@@ -373,7 +376,7 @@ h3:hover {
     position: absolute;
     padding: 0;
     margin: 0;
-    top: 590px;
+    top: 593px;
     left: 175px;
 }
 .chevronCase:hover {
