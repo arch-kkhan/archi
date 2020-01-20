@@ -147,7 +147,7 @@ body {
 }
 #btn-inspiration {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: .75rem;
     line-height: .85rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -570,7 +570,7 @@ h3:hover {
 }
 @media only screen and (max-width: 990px) {
     #btn-inspiration {
-        font-size: .85rem;
+        font-size: .75rem;
     }
     .bodyOne {
         width: 75%;
@@ -923,6 +923,9 @@ h3:hover {
         padding: 0;
         margin: 0;
         top: 745px;
+    }
+    .chevronCase {
+        top: 748px;
     }
 }
 @media screen and (max-width:320px) {
