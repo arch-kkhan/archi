@@ -383,6 +383,8 @@ p {
 @media only screen and (max-width:1350px) {  
     .nav {
         width: 45%;
+        margin-top: 100px;
+        margin-right: 0;
     }
     #archiHeader {
         top: -100px;
