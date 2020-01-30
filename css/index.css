@@ -2,12 +2,12 @@
 /* Grid CSS */
 body {
     font-family: 'open sans', sans-serif;
-    font-size:16px;
+    font-size: 16px;
     margin-right: 0;
     margin-left: 0;
     padding-left: 0;
     padding-right: 0;
-    background-color: #FCFBFA;
+    background-color: #fcfbfa;
 }
 .btn-primary {
     font-family: 'open sans', sans-serif;
@@ -73,9 +73,9 @@ p {
      color: #AF9574;
      text-decoration: none;
  }
+
 /* Intro */
 .aboutImg {
-    display: block;
     background-color: white;
     position: relative;
     margin-top: 150px;
@@ -351,12 +351,6 @@ p {
 
 
 /* Media Queries */
-@media only screen and (max-width:2000) {
-   .bodyOne {
-       width: 80%;
-   }
-}
-
 @media only screen and (max-width: 1650px) {
     h1 {
         font-size: 2.5rem;
