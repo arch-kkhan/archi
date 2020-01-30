@@ -390,12 +390,7 @@ p {
         top: 350px;
     }
 }
-@media only screen and (max-width:1350px) {
-    .nav {
-        width: 100%;
-        left: -200px;
-    }
-    
+@media only screen and (max-width:1350px) {  
     #archiHeader {
         top: -100px;
         margin-bottom: 0;
@@ -448,9 +443,6 @@ p {
 }
 /* ipad */
 @media only screen and (max-width:1060px){
-    .nav {
-        margin-top: 10%;
-    }
     #uxerHeader {
         top: 95px;
     }
@@ -702,32 +694,30 @@ p {
 /* ----------- Google Pixel ----------- */
 /* Portrait and Landscape */
 @media screen and (max-width: 580px) {
+    #cardHeader {
+        display: none;
+    }
     .aboutImg {
         display: none;
     }
     #archiHeader {
-        font-size: 50px;
-        top: 25px;
-        left: -250px;
+       display: none;
       }
       #uxerHeader {
-          font-size: 50px;
-          top: 120px;
-          left: -25px;
+         display: none;
       }
       #heroSubheaderOne {
-          top: 200px;
-          font-size: 14px;
-          left: -75px;
+          display: none;
       }
       #heroSubheaderTwo {
-          top: 235px;
-          left: -90px;
-          font-size: 14px;
+         display: none;
       }
     #headerTwo {
         bottom: -300px;
         left: -90px;
+    }
+    .card {
+        margin-top: 100px;
     }
     .quotationMark {
         font-size: 150px;
@@ -765,6 +755,15 @@ p {
     }
     #btnThoughts {
         left: 15.5%;
+    }
+    .rowHeader {
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .contentAbout {
+        text-align: left;
+        margin-right: 20px;
     }
 }
 @media screen and (max-width:480px) {
