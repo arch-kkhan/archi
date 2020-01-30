@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--CSS Links - Fonts and Style Sheets-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
 
@@ -28,49 +28,95 @@
 
 <body>
     <!-- Navigation Menu -->
-    <nav class="navbar navbar-default">
+    <nav id="into_Top" class="navbar navbar-default">
         <div class="container-fluid">
             <h class="navnbar-header">
-                <a class="navbar-brand">khadijah khan</a>
-                <a class="navbar-brand">ux/ui designer & researcher</a>
+                <a href="https://arch-kkhan.github.io/archi/" class="navbar-brand">khadijah khan</a>
+                <a href="https://arch-kkhan.github.io/archi/" class="navbar-brand">ux/ui designer & researcher</a>
             </h>
             <ul class="container-fluid nav">
-                <li class="active" id=findMe>Find Me</li>
-                <li><a class="navName" href="https://linkedin.com/in/khadija-khan-design">linked in</a></li>
-                <li><a class="navName" href="https://medium.com/@arch.kkhan">medium blogs</a></li>
-                <li><a class="navName" href="../archi/images/Khadijah Khan Resume.pdf">resume</a></li>
+                <li><a class="navName" href="https://arch-kkhan.github.io/khadijah_case-studies/">case studies</a></li>
+                <li><a class="navName" href="#about_Me">about me</a></li>
+                <li><a class="navName" href="https://medium.com/@arch.kkhan">Medium Blogs</a></li>
             </ul>
         </div>
     </nav>
-    <!--Hero Row -->
-    <div class="container-fluid hero">
-        <div class="row heroRow">
-            <div class="col-md-5 col-sm-12 heroLeft">
-                <img class="img-responsive" id="leftImage" src="..//archi/images/leftHeroBlack.svg" alt="arrows">
+
+    <section class="container-fluid">
+        <section class="row">
+            <section class="col-lg-12 col-sm-12">
+                <img class="img-responsive aboutImg" src="../archi/images/aboutMe.svg" alt="aboutImg">
                 <div class="carousel-caption" id="archiHeader">Archi</div>
                 <div class="carousel-caption" id="uxerHeader">Uxer</div>
                 <div class="carousel-caption" id="heroSubheaderOne">an architect immersed in</div>
                 <div class="carousel-caption" id="heroSubheaderTwo">the world of digital design</div>
-            </div>
-            <div class="col-md-7 col-sm-12 heroRight">
-                <img class="img-responsive" id="rightImage" src="../archi/images/rightHeroBlack.svg" alt="vitruvius">
-                <a id="btn-inspiration" class="carousel-caption" href="#">My Inspiration</a>
-            </div>
-        </div>
-    </div>
+            </section>
+        </section>
+    </section>
+    </section>
 
-    <!-- Visual Story Row -->
-    <section class="container-fluid visualContainer">
-        <div class="row visualRow">
-            <div class="col-md-3 col-sm-3 visualBorder">
+    <!--Cards -->
+    <section class="container-fluid">
+        <section class="row">
+            <section class="col-lg-12 col-sm-12">
+                <h1 id="cardHeader">Recent Work</h1>
+            </section>
+        </section>
+    </section>
+    <section class="container-fluid case" id="case_section">
+        <section class="row">
+            <section class="col-lg-4 col-sm-12">
+                <a href="https://medium.com/@arch.kkhan/furbaby-a-dog-friendly-mobile-app-b6f458e2f9cb">
+                    <div class="card">
+                        <img class="card-img-top cardImg" src="../archi/images/dog-01.svg" alt="furImg">
+                        <a class="btnCase" href="https://medium.com/@arch.kkhan/furbaby-a-dog-friendly-mobile-app-b6f458e2f9cb">
+                            <p class="card-text">Furbaby: a mobile app</p>
+                            <div class="btn btn-primary btnCase">read case study</div>
+                            <i class="fas fa-chevron-right chevronCase"></i>
+                        </a>
+                    </div>
+                </a>
+         
+            </section>
+            <section class="col-lg-4 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top cardImg" src="../archi/images/fossilCard-01.svg" alt="fossilImg">
+                    <a class="btnCase" href="#">
+                        <p class="card-text">Fossil & Hide: A website redesign</p>
+                        <div class="btn btn-primary btnCase">read case study</div>
+                        <i class="fas fa-chevron-right chevronCase"></i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="col-lg-4 col-sm-12 cardImg">
+                <a href="https://medium.com/@arch.kkhan/autism-improvised-a-local-atlantanon-profit-organization-371b08202d3d">
+                    <div class="card">
+                        <img class="card-img-top" src="../archi/images/autismCard-01.svg" alt="autismImg">
+                        <a class="btnCase" href="https://medium.com/@arch.kkhan/autism-improvised-a-local-atlantanon-profit-organization-371b08202d3d">
+                            <p class="card-text">Autism Improvised: Website Redesign</p>
+                            <div class="btn btn-primary btnCase">read case study</div>
+                            <i class="fas fa-chevron-right chevronCase"></i>
+                        </a>
+                    </div>
+                </a>
+            </section>
+        </section>
+    </section>
+
+
+    <!--Visual story -->
+    <section id="about_Me" class="container-fluid visualContainer">
+        <section class="row">
+            <section class="col-md-3 col-sm-3 visualBorder">
                 <img class="img-responsive" id="visualBlock" src="../archi/images/visualBlock.svg" alt="visualBorder">
-            </div>
-            <div class="col-md-6 col-sm-6">
+            </section>
+            <section class="col-md-6 col-sm-6">
                 <h1 class="visualHeader">A Visual</h1>
                 <h1 class="visualHeader">Storyteller's</h1>
                 <h1 class="visualHeader">Mission</h1>
-            </div>
-            <div class="col-md-3 col-sm-3 visualValues">
+            </section>
+            <section class="col-md-3 col-sm-3 visualValues">
                 <ul class="visualList" style="list-style-type:none;">
                     <li id="passion">Passion</li>
                     <li id="evolution">Evolution</li>
@@ -78,9 +124,11 @@
                     <li id="creativity">Creativity</li>
                     <li id="teamwork">Teamwork</li>
                 </ul>
-            </div>
-        </div>
+            </section>
+        </section>
     </section>
+
+
     <!--Thoughts Card -->
 
     <main class="container-fluid thoughtsContainer">
@@ -91,106 +139,67 @@
             <div class="col-md-8 col-md-10">
                 <div class="quotationMark">"</div>
                 <p id="thoughtsContent">
-                    UX/UI Design and Research feeds my passion for creativity.
-                    It perfectly intertwines my role as an architect and a caregiver.
-                    It is extremely important for me to understand and care for my users,
-                    I always believed that empathy was the foundation for all artwork.
-                    Every detail I design is for you to witness a vision that is built
-                    upon your desires and my fondness for user interface. The Vitruvian
-                    philosophy of functionality, beauty and strength is ingrained in my
-                    mind and is applied to all of my designs.
+                    UX/UI Design and Research feeds my passion for creativity. It perfectly intertwines my role as
+                    an architect and a caregiver. It is extremely important for me to understand and care for my users,
+                    I always believed that empathy was the foundation for all artwork. Every detail I design is for you
+                    to witness a vision that is built upon your desires and my fondness for user interface. The
+                    Vitruvian philosophy of functionality, beauty and strength is ingrained in my mind and is applied to all of my
+                    designs.
                 </p>
-                <a id="btnThoughts" href="https://medium.com/@arch.kkhan" class="btn btn-primary">Read More on
-                    Medium</a>
-                <a id="btnThoughts" href="https://medium.com/@arch.kkhan" class="btn btn-primary">
+                <a id="btnThoughts" href="https://medium.com/@arch.kkhan">
+                    <div class="btn btn-primary btnMedium">read more on medium</div>
                     <i class="fas fa-chevron-right chevronThoughts"></i>
                 </a>
             </div>
     </main>
 
-    <!-- Medium Case Studies -->
+    <!-- About Me -->
 
-    <div class="container-fluid mediumCard">
-        <div class="row mediumRow">
-            <div id="borderMedium">Recent Case Studies on Medium:</div>
-        </div>
-    </div>
-    <div class="container-fluid caseContainer">
-        <div class="row caseRow">
-            <a id="btnCardOne" href="https://medium.com/@arch.kkhan/fossil-hide-908c4bf607b9">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="card caseOne">
-                        <div class="card-body bodyOne">
-                            <h3 class="card-title one">fossil & hide:</h3>
-                            <p class="card-text">Fossil & Hide is a local Atlanta jewelry business run by
-                                Karen Horn and Jenny Watts. As their presence is increasing around Atlanta
-                                and beyond, their website needed an overhaul to increase direct sales and brand
-                                awareness. Our team chose to redesign the Fossil & Hide website to help this
-                                small
-                                business achieve their career goals and make a beautiful eCommerce site.</p>
-                            <a id="btnCase" href="https://medium.com/@arch.kkhan/fossil-hide-908c4bf607b9"
-                                class="btn btn-primary">read case study</a>
-                            <a id="btnChevron" href="https://medium.com/@arch.kkhan/fossil-hide-908c4bf607b9"
-                                class="btn btn-primary">
-                                <i class="fas fa-chevron-right chevronCase"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a id="btnCardTwo"
-                href="https://medium.com/@arch.kkhan/autism-improvised-a-local-atlantanon-profit-organization-371b08202d3d">
+    <main class="container-fluid">
+        <section class="row">
+            <section class="col-lg-12 col-sm-12">
+                <div class="borderAbout"></div>
+            </section>
+        </section>
+        <section class="row rowHeader">
+            <section class="col-lg-5 col-sm-12">
+                <h2 id="about_me">About Me</h2>
+            </section>
+            <section class="col-lg-7 col-sm-12">
+                <p class="contentAbout">
+                    Hello, I'm Khadijah Khan! My role in most of my projects is a user interface designer. 
+                    It is my responsibility and desire to pull in your audience visually, I revolve around building visual brands.
+                    I had the wonderful experience of working as an architect as well as a graphic designer for a few years.
+                    Each phase of my career built upon one another and guided me to become a stronger multi-displinary designer. However, I am
+                    always searching for ways of increasing my knowledge and skills! I am simply a nomad in this journey who is evolving with every 
+                    project and team I work with.</p>
+                <a href="../archi/images/Khadijah Khan Resume.pdf">
+                    <div class="btn btn-primary btnResume">download resume</div>
+                    <i class="fas fa-chevron-right chevronAbout"></i>
+                </a>
+            </section>
+        </section>
+    </main>
 
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="card caseTwo">
-                        <div class="card-body bodyTwo">
-                            <h3 class="card-title two">Autism Improvised:</h3>
-                            <p class="card-text">AI offers a soft landing space to
-                                practice and develop social communication ​skills through the magic of improv
-                                and
-                                theatre. We had the wonderful opportunity to work closely with the stakeholders
-                                of
-                                this organization and help them achieve their vision!</p>
-                            <a id="btnCase"
-                                href="https://medium.com/@arch.kkhan/autism-improvised-a-local-atlantanon-profit-organization-371b08202d3d"
-                                class="btn btn-primary">read case study</a>
-                            <a id="btnChevron"
-                                href="https://medium.com/@arch.kkhan/autism-improvised-a-local-atlantanon-profit-organization-371b08202d3d"
-                                class="btn btn-primary">
-                                <i class="fas fa-chevron-right chevronCase"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a id="btnCardThree" href="https://medium.com/@arch.kkhan/furbaby-a-dog-friendly-mobile-app-b6f458e2f9cb">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="card caseThree">
-                        <div class="card-body bodyThree">
-                            <h3 class="card-title three">furbaby:</h3>
-                            <p class="card-text"> With an intuitive map, earned reward,
-                                social engagement and dog-friendly suggestions, Fur Baby will reduce your dog’s
-                                separation and social anxiety by promoting mental and physical well-being for
-                                both you and your
-                                furbaby.
-                            </p>
-                            <a id="btnCase"
-                                href="https://medium.com/@arch.kkhan/furbaby-a-dog-friendly-mobile-app-b6f458e2f9cb"
-                                class="btn btn-primary">read case study</a>
-                            <a id="btnChevron"
-                                href="https://medium.com/@arch.kkhan/furbaby-a-dog-friendly-mobile-app-b6f458e2f9cb"
-                                class="btn btn-primary">
-                                <i class="fas fa-chevron-right chevronCase"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <!-- User Interface Dribbble -->
-
-    <!--Footer -->
+    <!-- Experience -->
+    <section class="container-fluid">
+        <section class="row rowHeader">
+            <section class="col-lg-5 col-sm-12">
+                <h2>Architect to UX</h2>
+            </section>
+            <section class="col-lg-7 col-sm-12">
+                <p class="contentAbout"> I have been designing for the past 5 years. The years in design was heavily influenced
+                    by my background in architecture. This underlying principle gave me the confidence to transition smoothly to
+                    a new industry. I was slightly hesitant to make this change, I thought I would not be able to provide 
+                    the right skills to a new industry. But it was persistence and passion that led me to each milestone. 
+                </p>
+                <a href="https://arch-kkhan.github.io/khadijah_case-studies/">
+                    <div class="btn btn-primary btnMedium">Read Case Studies</div>
+                    <i class="fas fa-chevron-right chevronAbout"></i>
+                </a>
+                <a href="#into_Top"><i class="fas fa-chevron-up chevronTop"></i></a>
+            </section>
+        </section>
+    </section>
 
 </body>

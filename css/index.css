@@ -1,12 +1,47 @@
 
 /* Grid CSS */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-family: 'open sans', sans-serif;
+    font-size:16px;
     margin-right: 0;
     margin-left: 0;
     padding-left: 0;
     padding-right: 0;
+    background-color: #FCFBFA;
+}
+.btn-primary {
+    font-family: 'open sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding-left: 5px;
+}
+.btn-primary:hover {
+    background-color: transparent;
+} 
+/*about me */
+h2 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size:16px;
+    color: #AF9574;
+    }
+p {
+    color: #4B4B4B;
+    line-height: 2.0rem;
+    font-size: 16px;
+}
+#cardHeader {
+    font-family: 'raleway',sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 200px;
+    margin-left: 100px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
 }
 /* Navigation Bar */
 .navbar {
@@ -19,11 +54,11 @@ body {
 }
 .nav {
     color: #4B4B4B;
-    margin-top: 5%;
+    margin-top: 150px;
     width: 35%;
     padding-left:0;
     padding-right: 0;
-    margin-right: 20px;
+    margin-right: 120px;
 }
  .navName {
      color: #4B4B4B;
@@ -34,25 +69,18 @@ body {
      text-decoration: none;
      color: #4B4B4B;
  }
-
-/*Hero Block */
-.hero {
-    margin-top: 5%;
-}
-.heroLeft {
-    padding: 0%;
-    background-color:#221D1D;
-}
-.heroRight {
-    padding: 0%;
-}
-#leftImage {
+ .navbar-brand:hover{
+     color: #AF9574;
+     text-decoration: none;
+ }
+/* Intro */
+.aboutImg {
+    display: block;
+    background-color: white;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-#rightImage {
-    position: relative;
+    margin-top: 150px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 /* Hero Typography */
@@ -60,10 +88,9 @@ body {
 #archiHeader {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 3.5rem;
-    line-height: 1rem;
+    font-size:120px;
     text-transform: uppercase;
-    color: #AF9574;
+    color: #BFAA90;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -76,16 +103,15 @@ body {
   -webkit-justify-content: center; 
   justify-content: center; 
   position: absolute;
-  top: -25px;
-  left: -10px;
+  top: -95px;
+  left: -400px;
 }
 #uxerHeader {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 3.5rem;
-    line-height: 1rem;
+    font-size:120px;
     text-transform: uppercase;
-    color:#AF9574;
+    color:#BFAA90;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -98,16 +124,16 @@ body {
   -webkit-justify-content: center; 
   justify-content: center; 
   position: absolute;
-  top: 75px;
-  left: 200px;
+  top: 125px;
+  left: 50px;
 }
 #heroSubheaderOne {
     font-family: 'Roboto', sans-serif;
-    font-size: .75rem;
+    font-size: 16px;
     line-height: 1rem;
     font-weight: lighter;
     text-transform: uppercase;
-    color: #AF9574;
+    color: #BFAA90;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -120,16 +146,16 @@ body {
   -webkit-justify-content: center; 
   justify-content: center; 
   position: absolute;
-  top: 140.5px;
-  left: 190px;
-
+  top: 250px;
+  left: 150px;
 }
 #heroSubheaderTwo {
     font-family: 'Roboto', sans-serif;
-    font-size: .75rem;
+    font-size: 16px;
     line-height: 1rem;
+    font-weight: lighter;
     text-transform: uppercase;
-    color: #AF9574;
+    color: #BFAA90;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -142,39 +168,48 @@ body {
   -webkit-justify-content: center; 
   justify-content: center; 
   position: absolute;
-  top: 175.5px;
-  left: 175px;
+  top: 300px;
+  left: 125px;
 }
-#btn-inspiration {
-    font-family: 'Roboto', sans-serif;
-    font-size: .75rem;
-    line-height: .85rem;
+
+/* Cards */
+.case {
+    background-color: #FCFBFA;
+    margin-bottom: 150px;
+}
+.card {
+    background-color:transparent;
+    border-radius: 0px;
+    border: none;
+}
+.card-text {
     text-transform: uppercase;
     text-decoration: none;
-    color: #AF9574;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: center; 
-  justify-content: center; 
-  position: absolute;
-  top: -5px;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 15px;
 }
+.card-text:hover {
+    color: #AF9574;
+}
+.btnCase {
+    text-align: center;
+    color: black;
+}
+.btnCase:hover {
+    text-decoration: none;
+    color:#AF9574;
+}
+.cardImg:hover {
+    transition: 8s;
+    transform: scale(1.1);
+}
+
 /* Visual Storyteller */
 .visualContainer {
-    margin-top: 0;
-    padding-top: 0;
-
+    background-color: white;
 }
 #visualBlock {
-    padding:0;
-    margin: 0;
     position: relative;
     display: block;
 }
@@ -218,8 +253,9 @@ body {
 .thoughtsRow {
     padding-top: 0;
     margin-top: 0;
-    height: 450px;
-    background-color:#D9D5D5;
+    height: 550px;
+    background-color:#EDEAEA;
+    transition: all .3s ease-out;
 }
 #headerTwo {
     text-transform: uppercase;
@@ -251,180 +287,66 @@ body {
     position: relative;
     top: 20px;
     padding-left: 15%;
-    color: #4B4B4B;
-    line-height: 2.5rem;
-    font-size: 20px;
-    }
+ }
 #btnThoughts {
     position: relative;
     top: 55px;
     left: 80.5%;
-    }
-    #btnThoughts:hover {
-        color: white;
-    }
-    .chevronThoughts {
-        color: black;
-    }
-    .chevronThoughts:hover {
-        color: white;
-    }
-
-
-    
-/* Medium Case Cards */
-.mediumCard {
-    margin: 0;
-    padding:0;
 }
-#borderMedium {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    background-color: black;
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: 0;
-    margin-top: 200px;
+
+#btnThoughts:hover {
+    color:#AF9574;
+    text-decoration: none;
+}
+.chevronThoughts {
+     color: black;
+}
+.chevronThoughts:hover {
+    color:#AF9574;
+}
+.btnMedium:hover {
+    color: #AF9574;
+}
+
+/* About Me */
+.borderAbout {
+    margin-top: 250px;
+    border: 0.5px solid #AF9574;
     margin-bottom: 0;
 }
-/* Case Card */
-.caseRow {
-    height: 850px;
-    margin-bottom:0;
-    padding-bottom: 0;
-    padding-left: 0;
-    margin-left: 0;
-    margin-right: 0;    
+.rowHeader {
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-bottom: 200px;
 }
-.caseContainer {
-    margin-top: 0px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top:0;
-    padding-bottom: 5px;
-    padding-left: 55px;
-    padding-right: 55px;
-    margin-bottom: 150px;
-
-}
-.card {
-    top:50px;
-    height: 650px;
-    border-radius: 0px;
-    border: none;
-    border-bottom: 85px solid #BFAA8F;
-    margin-bottom: 50px;
-    
-}
-.card:hover {
-    background-color: #D9D5D5;
-}
-.card-body {
-    height:600px;
-}
-h3 {
-    font-family: 'old standard tt',sans-serif;
-    color: black;
-    position: absolute;
-    padding-top: 0;
-    padding-bottom:0;
-    padding-left: 5px;
-    top: 315px;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-h3:hover {
-    color: white;
-}
-.card-text {
-    color: #4B4B4B;
-    position: absolute;
-    top: 350px;
-    line-height: 1.5rem;
+.contentAbout {
     text-align: left;
-    padding-top: 0;
-    margin-top: 0;
-    padding-right: 15px;
-    padding-left: 5px;
+    margin-right: 150px;
 }
-.btn-primary {
-    font-family: 'roboto', sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: black;
-    border: none;
-    border-radius: 0;
-    background-color: transparent;
-    padding-left: 5px;
-}
-.btn-primary:hover {
-    background-color: transparent;
-}
-#btnCase {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    top: 590px;
-}
-.chevronCase {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    top: 593px;
-    left: 175px;
-}
-.chevronCase:hover {
-    color: white;
-}
-.bodyOne {
-    background-image: url("../images/fhCard.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    border: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-
-}
-.bodyTwo {
-    background-image: url("../images/aiCard.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.bodyThree {
-    background-image: url("../images/fur.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-/* Dribbble */
-#borderDribbble {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    font-family: 'raleway',sans-serif;
-    text-transform: uppercase;
-    background-color: black;
+.chevronTop {
+    font-size: 35px;
+    color: #AF9574;
     position:absolute;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 5px;
-    margin-top: 0;
-    margin-left: 0;
+    right: 200px;
+    padding-top: 100px;
+    margin-bottom: 200px;
 }
+.chevronTop:hover {
+    opacity: 75%;
+}
+.btnResume {
+    color: black;
+}
+.btnResume:hover{
+    color: #AF9574;
+}
+.chevronAbout {
+    color: black;
+}
+.chevronAbout:hover {
+    color: #AF9574;
+}
+
 /* Footer*/
 
 
@@ -469,25 +391,28 @@ h3:hover {
     }
 }
 @media only screen and (max-width:1350px) {
+    .nav {
+        width: 100%;
+        left: -200px;
+    }
+    
     #archiHeader {
-        top: -50px;
+        top: -100px;
         margin-bottom: 0;
         padding-bottom: 0;
     }
     #uxerHeader {
-        font-size: 3rem;
-        left: 190px;
         padding-bottom: 0;
         margin:0;
-        top: 55px;
+        top:95px;
     }
     #heroSubheaderOne {
-        top: 130.5px;
-        left: 180px;
+        top: 220px;
+        left: 150px;
     }
     #heroSubheaderTwo {
-        top: 165px;
-        left: 175px;
+        top: 270px;
+        left: 140px;
     }
     .visualHeader {
         font-size: 3.5rem;
@@ -502,40 +427,38 @@ h3:hover {
         left: 45px;
         padding-right: 0;
     }
-    h3 {
-        top: 250px;
+}
+@media only screen and (max-width:1150px){
+    #archiHeader {
+        font-size:100px;
     }
-    .card-text {
-        top: 300px;
+    #uxerHeader {
+        font-size: 100px;
+        top: 75px;
+        left: -25px;
+    }
+    #heroSubheaderOne {
+        top: 200px;
+        left: 30px;
+    }
+    #heroSubheaderTwo {
+        top: 240px;
+        left: 15px;
     }
 }
 /* ipad */
 @media only screen and (max-width:1060px){
     .nav {
         margin-top: 10%;
-        width: 45%;
-    }
-    #archiHeader {
-        font-size: 3rem;
-        left: 15px;
     }
     #uxerHeader {
-        font-size: 3rem;
-        left: 200px;
+        top: 95px;
     }
     #heroSubheaderOne {
-        left: 160px;
-        top: 140px;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-        padding-top: 0;
+        top: 215px;
     }
     #heroSubheaderTwo {
-        top: 170px;
-        left: 150px;
-        padding-right: 0;
-        padding-left: 0;
+        top: 245px;
     }
     .visualHeader {
         font-size: 3.5rem;
@@ -561,35 +484,27 @@ h3:hover {
     #thoughtsContent {
         left: 65px;
     }
-    h3 {
-        top: 200px;
-    }
-    .card-text {
-        top: 250px;
-    }
 }
 @media only screen and (max-width: 990px) {
+    #archiHeader {
+        font-size: 90px;
+    }
+    #uxerHeader {
+        font-size: 90px;
+        top: 100px;
+        left: -70px;
+    }
+    #heroSubheaderOne {
+        top: 210px;
+        left: -45px;
+    }
+    #heroSubheaderTwo {
+        top: 250px;
+        left: -65px;
+       
+    }
     #btn-inspiration {
         font-size: .75rem;
-    }
-    .bodyOne {
-        width: 75%;
-        left: 25px;
-    }
-    .bodyTwo {
-        width: 75%;
-    }
-    .bodyThree {
-        width: 75%;
-    }
-    h3 {
-        top: 350px;
-    }
-    .card-text {
-        top: 400px;
-    }
-    .caseContainer {
-        height: 2300px;
     }
     #btnThoughts {
         top: 30px;
@@ -599,44 +514,7 @@ h3:hover {
 
 
 @media only screen and (max-width:923px){ 
-    .nav {
-        margin-top: 0;
-    }
-    .navName {
-        display: none;
-    }
-    #findMe {
-        display: none;
-    }
-    #archiHeader {
-        top: -45px;
-        left: 20px;
-        font-size: 2.95rem;
-    }
-    #uxerHeader {
-        font-size: 2.95rem;
-        padding: 0;
-        top: 70px;
-        left: 175px;
-    }
-    #heroSubheaderOne {
-        font-size: .65rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-right: 0;
-        left: 140px;
-        top: 135px;
-    }
-    #heroSubheaderTwo {
-        font-size: .65rem;
-        top: 170px;
-        left: 125px;
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+
     .visualHeader {
         font-size: 3rem;
         top: 15%;
@@ -668,46 +546,32 @@ h3:hover {
         font-size: 130px;
         left: 170px;
     }
-    .bodyOne {
-        width: 75%;
-        left: 25px;
+}
+@media only screen and (max-width:880px) {
+    #archiHeader {
+        top: -60px;
     }
-    .bodyTwo {
-        width: 75%;
-    }
-    .bodyThree {
-        width: 75%;
-    }
-    h3 {
-        top: 350px;
-    }
-    .card-text {
-        top: 400px;
+    #uxerHeader {
+        top: 110px;
     }
 }
 
 @media only screen and (max-width:800px) {
     #archiHeader {
-        font-size: 2.95rem;
-        top: -45px;
+        font-size: 80px;
+        top: -50px;
+        left: -300px;
     }
     #uxerHeader {
-        font-size: 2.95rem;
-        left: 150px;
-        padding-bottom: 0;
+        font-size: 80px;  
     }
     #heroSubheaderOne {
-        font-size: .65rem;
-        top: 125px;
-        left: 130.5px;
+        left: -65px;
     }
     #heroSubheaderTwo {
-        font-size: .65rem;
-        top: 155px;
-        left: 120px;
-        line-height: .85rem;
-        padding-top: 0;
+        left: -80px;
     }
+    
     .visualList {
         font-size: .85rem;
     }
@@ -732,19 +596,11 @@ h3:hover {
 /* Portrait and Landscape */
 @media screen and (max-width: 768px) {
     #archiHeader {
-        left: -20px;
-        font-size: 3rem;
+      font-size: 70px;
+      top: -25px;
     }
     #uxerHeader {
-        font-size: 3rem;
-        left: 150px;
-    }
-    #heroSubheaderOne {
-        left: 132px;
-    }
-    #heroSubheaderTwo {
-        top: 165px;
-        left: 115px;
+      font-size: 70px;
     }
     .visualHeader {
         font-size: 2.7rem;
@@ -818,43 +674,54 @@ h3:hover {
     #btnThoughts {
         left: 55%;
     }
-    .caseRow {
-        height: 1000px;
-    }
-    .bodyOne {
-        padding-top: 10px;
-    }
-    h3 {
-        top: 300px;
-    }
-    .card-text {
-        top: 350px;
-    }
 }
+@media screen and (max-width:650px){
+    #archiHeader {
+        font-size: 60px;
+        top: 25px;
+        left: -250px;
+      }
+      #uxerHeader {
+          font-size: 60px;
+          top: 120px;
+          left: -25px;
+      }
+      #heroSubheaderOne {
+          top: 200px;
+          font-size: 14px;
+          left: -50px;
+      }
+      #heroSubheaderTwo {
+          top: 235px;
+          left: -70px;
+          font-size: 14px;
+         
+      }
+}
+
 /* ----------- Google Pixel ----------- */
 /* Portrait and Landscape */
 @media screen and (max-width: 580px) {
-    .navName {
-        display: none;
-    }
-    #findMe {
-        display: none;
-    }
     #archiHeader {
-        left: -20px;
-        font-size: 3rem;
-    }
-    #uxerHeader {
-        font-size: 3rem;
-        left: 160px;
-    }
-    #heroSubheaderOne {
-        left: 150px;
-    }
-    #heroSubheaderTwo {
-        top: 155px;
-        left: 140px;
-    }
+        font-size: 50px;
+        top: 25px;
+        left: -250px;
+      }
+      #uxerHeader {
+          font-size: 50px;
+          top: 120px;
+          left: -25px;
+      }
+      #heroSubheaderOne {
+          top: 200px;
+          font-size: 14px;
+          left: -75px;
+      }
+      #heroSubheaderTwo {
+          top: 235px;
+          left: -90px;
+          font-size: 14px;
+      }
     #headerTwo {
         bottom: -300px;
         left: -90px;
@@ -896,63 +763,37 @@ h3:hover {
     #btnThoughts {
         left: 15.5%;
     }
-    h3 {
-        margin-top: 0;
-        top: 200px;
-        padding-left: 0;
-        margin-left: 0;
-    }
-    .card-text {
-        top: 250px;
-    }
-    .caseContainer {
-        margin-right: 0;
-        margin-left: 0;
-        padding-left: 5px;
-        padding-right: 5px;
-        height: 2700px;
-        background-color: cover;
-    }
-    .card {
-        height: 800px;
-        border-bottom: #AF9574 solid 75px;
-        width: 300px;
-    }
-    #btnCase {
-        position: absolute;
-        padding: 0;
-        margin: 0;
-        top: 745px;
-    }
-    .chevronCase {
-        top: 748px;
-    }
 }
-@media screen and (max-width:320px) {
-    .navName {
-        display: none;
-    }
-    #findMe {
-        display: none;
-    }
+@media screen and (max-width:480px) {
     #archiHeader {
-        font-size: 2.95rem;
-    }
-    #uxerHeader {
-        font-size: 2.95rem;
-        left: 150px;
-        padding-bottom: 0;
-    }
-    #heroSubheaderOne {
-        top: 130px;
-        left: 131.5px;
-        padding-top: 0;
-    }
-    #heroSubheaderTwo {
-        top:175px;
-        left: 120px;
-        padding-top: 0;
-    }
+        font-size: 40px;
+        top: 35px;
+        left: -160px;
+      }
+      #uxerHeader {
+          font-size: 40px;
+          top: 120px;
+          left: -25px;
+      }
+      #heroSubheaderOne {
+          top: 190px;
+          left: -85px;
+      }
+      #heroSubheaderTwo {
+          top: 225px;
+          left: -100px;
+          font-size: 14px;
+      }
+    #headerTwo {
+        bottom: -300px;
+        left: -90px;
+    } 
+}
+@media screen and (max-width:400px) {
+
+}
+
+@media screen and (max-width:320px) {
     #visualBlock {
         display: none;
     }
@@ -969,29 +810,6 @@ h3:hover {
     }
     #headerTwo {
         bottom: -310px;
-    }
-    .caseContainer {
-        margin-right: 0;
-        margin-left: 0;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .card {
-        height: 800px;
-        border-bottom: #AF9574 solid 75px;
-        width: 250px;
-    }
-    h3 {
-        margin-top: 0;
-        top: 170px;
-        font-size: .85rem;
-    }
-    .card-text {
-        top: 200px;
-        font-size: .85rem;
-    }
-    #btnCase {
-        font-size: .85rem;
     }
 }
 
