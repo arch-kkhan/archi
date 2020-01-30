@@ -346,10 +346,6 @@ p {
 .chevronAbout:hover {
     color: #AF9574;
 }
-
-/* Footer*/
-
-
 /* Media Queries */
 @media only screen and (max-width: 1650px) {
     h1 {
@@ -385,6 +381,9 @@ p {
     }
 }
 @media only screen and (max-width:1350px) {  
+    .nav {
+        width: 45%;
+    }
     #archiHeader {
         top: -100px;
         margin-bottom: 0;
@@ -415,6 +414,11 @@ p {
     #thoughtsContent {
         left: 45px;
         padding-right: 0;
+    }
+}
+@media only screen and (max-width:1250px){
+    .nav {
+        width: 100%;
     }
 }
 @media only screen and (max-width:1150px){
@@ -666,23 +670,23 @@ p {
         font-size: 60px;
         top: 25px;
         left: -250px;
-      }
+    }
       #uxerHeader {
           font-size: 60px;
           top: 120px;
           left: -25px;
-      }
+    }
       #heroSubheaderOne {
           top: 200px;
           font-size: 14px;
           left: -50px;
-      }
+    }
       #heroSubheaderTwo {
           top: 235px;
           left: -70px;
           font-size: 14px;
          
-      }
+    }
 }
 
 /* ----------- Google Pixel ----------- */
@@ -696,16 +700,16 @@ p {
     }
     #archiHeader {
        display: none;
-      }
+    }
       #uxerHeader {
          display: none;
-      }
+    }
       #heroSubheaderOne {
           display: none;
-      }
+    }
       #heroSubheaderTwo {
          display: none;
-      }
+    }
     #headerTwo {
         bottom: -300px;
         left: -90px;
@@ -785,9 +789,7 @@ p {
         left: -90px;
     } 
 }
-@media screen and (max-width:400px) {
 
-}
 
 @media screen and (max-width:320px) {
     #visualBlock {
