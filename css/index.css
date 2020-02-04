@@ -55,8 +55,6 @@ body {
     right: 55px;
     border-bottom: solid 1px black;
   }
-
-  
   .topnav a:hover {
     background-color: none;
     color: #AF9574;
@@ -74,7 +72,7 @@ body {
     display: none;
     border-bottom: none;
   }
-  .navBar {
+  .topnav .icon:hover {
       border: none;
   }
   
