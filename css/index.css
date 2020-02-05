@@ -7,12 +7,13 @@ body {
     padding-left: 0;
     padding-right: 0;
     background-color: #fcfbfa;
+    color: #4B4B4B;
 }
 .btn-primary {
     font-family: 'open sans', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
-    color: black;
+    color: #4B4B4B;
     border: none;
     border-radius: 0;
     background-color: transparent;
@@ -123,6 +124,7 @@ p {
     margin-left: 100px;
     padding-bottom: 0;
     margin-bottom: 50px;
+    color: #4B4B4B;
 }
 /* Intro */
 .aboutImg {
@@ -237,6 +239,7 @@ p {
 .card-text {
     text-transform: uppercase;
     text-decoration: none;
+    color: #4B4B4B;
     background-color: transparent;
     text-align: center;
     padding-top: 15px;
@@ -246,7 +249,7 @@ p {
 }
 .btnCase {
     text-align: center;
-    color: black;
+    color: #4B4B4B;
 }
 .btnCase:hover {
     text-decoration: none;
@@ -387,13 +390,13 @@ p {
     opacity: 75%;
 }
 .btnResume {
-    color: black;
+    color: #4B4B4B;
 }
 .btnResume:hover{
     color: #AF9574;
 }
 .chevronAbout {
-    color: black;
+    color: #4B4B4B;
 }
 .chevronAbout:hover {
     color: #AF9574;
